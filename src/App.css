@@ -1,0 +1,52 @@
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "figure figure figure figure figure figure figure choose choose choose"
+    "figure figure figure figure figure figure figure modify modify modify"
+    "figure figure figure figure figure figure figure modify modify modify"
+    "figure figure figure figure figure figure figure modify modify modify"
+    "figure figure figure figure figure figure figure modify modify modify"
+  "export export export export export export export export export export";
+}
+
+.choose { 
+  grid-area: choose;
+  background-color: #2d2c32; 
+}
+
+.modify { 
+  grid-area: modify;
+  background-color: #201f24;
+  border-bottom: 1px solid #151419; 
+}
+
+.figure { 
+  grid-area: figure;
+  background-color: #151419;
+
+}
+
+#divContenedor{
+  max-width: 700px;
+  min-height: 450px;
+  position: relative;
+  margin: auto;
+  display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+  }
+  
+  #divHijo{
+  min-width: 70%;
+    margin: auto;
+  }
+
+.export { 
+  grid-area: export;
+  background-color: #201f24; 
+}
+

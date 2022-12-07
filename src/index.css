@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:aliceblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

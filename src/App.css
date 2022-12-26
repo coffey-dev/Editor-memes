@@ -10,12 +10,18 @@
     "figure figure figure figure figure figure figure modify modify modify"
     "figure figure figure figure figure figure figure modify modify modify"
     "figure figure figure figure figure figure figure modify modify modify"
-  "export export export export export export export export export export";
+    "export export export export export export export export export export";
 }
 
 .choose { 
   grid-area: choose;
-  background-color: #2d2c32; 
+  background-color: #2d2c32;
+  text-align: center;
+
+}
+
+h2, h3 {
+  text-align: center;
 }
 
 .modify { 
@@ -48,5 +54,13 @@
 .export { 
   grid-area: export;
   background-color: #201f24; 
+}
+
+.Picker {
+  text-align: center;
+}
+
+.export {
+text-align: center;
 }
 

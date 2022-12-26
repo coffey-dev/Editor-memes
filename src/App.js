@@ -18,11 +18,7 @@ const App = () => {
 
   const[txtcolor,setTxtcolor] = useState("");
 
-  
-{/*  
-  const[txtAlinearV,setTxtAlinearV] = useState(1);
-  const[txtAlinearH,setTxtAlinearH] = useState(1);
-*/}
+
 
   const seleccionarImg = (e) => {
             setImgmeme(e.target.value);
@@ -89,6 +85,7 @@ const App = () => {
   </div>
 
   <div className="choose">
+    <h2>Elegí una imagen de "The shinning"</h2>
   <select onChange={seleccionarImg} >
         <option value={1}>Laughing</option>
         <option value={2}>Upset</option>
@@ -105,7 +102,7 @@ const App = () => {
   </div>
   
   <div className="modify">
-   <h1>Ingresá el texto deseado</h1>
+   <h3>Ingresá el texto deseado</h3>
   
    <input 
             onChange={ingresarTexto} 
@@ -125,13 +122,13 @@ const App = () => {
 
     </input>
 <hr />
+<h3>Elegí el tipo de letra</h3>
     <select onChange={formatearTexto} >
         <option value={"Times New Roman"}>Times New Roman</option>
         <option value={"Courier New"}>Courier New</option>
         <option value={"Palatino"}>Palatino</option>
         <option value={"Garamond"}>Garamond</option>
         <option value={"Bookman"}>Bookman</option>
-        <option value={"Avant Garde"}>Avant Garde</option>
         <option value={"Verdana"}>Verdana</option>
         <option value={"Georgia"}>Georgia</option>
         <option value={"Comic Sans MS"}>Comic Sans MS</option>
@@ -142,7 +139,7 @@ const App = () => {
   
   </select>
 <hr />
-
+<h3>Ubicación del texto</h3>
   <select onChange={alinearTexto} >
         <option value={1}>Izquierda</option>
         <option value={3}>Centro</option>
@@ -151,9 +148,11 @@ const App = () => {
   </select>
 
 <hr />
-
-  <input onChange={cambiarColorTexto}  type="color" id="favcolor" name="favcolor" value="#ff0000" />
-
+<div className='Picker'>
+<h3>Color del texto</h3>
+  <input className='elige_color' onChange={cambiarColorTexto}  type="color" id="favcolor" name="favcolor" value="#ff0000" />
+  </div>
+  
   </div>
   
   <div className="export">
